@@ -348,7 +348,7 @@ tbody tr:last-child td{border-bottom:none}
       <!-- REGISTER -->
       <div class="auth-form" id="fReg">
         <div class="af-err" id="rErr"></div>
-        <div class="lic-note">🔑 Butuh <strong>Kode Lisensi</strong> dari admin.<br>Hubungi: <strong>@amazone_store</strong> · <strong>@aressfx</strong></div>
+        <div class="lic-note">🔑 Butuh <strong>Kode Lisensi</strong> dari admin.<br>Hubungi: <strong>@aressfx</strong></div>
         <div class="af-g"><label>Kode Lisensi</label><input type="text" id="rLic" placeholder="TJPRO-XXXX-XXXX" style="text-transform:uppercase"></div>
         <div class="af-row">
           <div class="af-g"><label>Username</label><input type="text" id="rU" placeholder="min. 4 karakter"></div>
@@ -613,10 +613,11 @@ const BROKERS={
   "Gulf Brokers":["Standard","Professional"],
   "ADSS":["Standard","OREX Professional"],
   "FXPRIMUS":["Standard","ECN Premium","Islamic"],
+  "VALETAX":["Standard","CENT","BONUS","PRO","BOOSTER","ECN"],
   "Lainnya / Other":["Standard","Cent","Micro","Mini","ECN","Pro","VIP","Swap Free","Islamic","Demo"]
 };
 
-const LICENSES=['AMAZONE-PRO-2024','ARESSFX-VIP-001','ARESSFX-VIP-002','ARESSFX-VIP-003','TJPRO-LIFETIME-01','TJPRO-LIFETIME-02','TJPRO-LIFETIME-03','TJPRO-LIFETIME-04','TJPRO-LIFETIME-05','TJPRO-LIFETIME-06','TJPRO-LIFETIME-07','TJPRO-LIFETIME-08','TJPRO-LIFETIME-09','TJPRO-LIFETIME-10','GOLD-DRAGON-CLUB','MOUNT-ANGEL-PRO','LIVINA-VIP-2024','ATLAS-CLUB-001','ATLAS-CLUB-002','ATLAS-CLUB-003'];
+const LICENSES=['ARESSFX-VIP-001','ARESSFX-VIP-002','ARESSFX-VIP-003'];
 
 // populate broker dropdown
 (()=>{const s=document.getElementById('rBroker');Object.keys(BROKERS).sort().forEach(b=>{const o=document.createElement('option');o.value=o.textContent=b;s.appendChild(o);});})();
